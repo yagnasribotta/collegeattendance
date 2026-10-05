@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Attendance • College Attendance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-bg">
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Bapatla <span>Attendance</span></h1>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="attendance.html" class="nav-link active">Attendance</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content-card">
+    <h2>Mark Attendance</h2>
+
+    <div class="controls">
+      <button id="loadSample" class="btn small">Load Sample Students</button>
+      <button id="saveBtn" class="btn small">Save Attendance</button>
+      <button id="exportBtn" class="btn small outline">Export CSV</button>
+      <button id="clearBtn" class="btn small alt">Clear</button>
+    </div>
+
+    <div class="table-wrap">
+      <table id="attendanceTable" class="styled-table">
+        <thead>
+          <tr><th>Roll No</th><th>Name</th><th>Present</th></tr>
+        </thead>
+        <tbody>
+          <!-- rows inserted by script -->
+        </tbody>
+      </table>
+    </div>
+
+    <p class="muted">Saved attendance is stored in your browser. To make it permanent, add a backend and send saved data to a server.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Bapatla Attendance</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

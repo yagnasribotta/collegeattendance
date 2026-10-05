@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact • College Attendance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-bg">
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Bapatla <span>Attendance</span></h1>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="attendance.html" class="nav-link">Attendance</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content-card">
+    <h2>Contact Us</h2>
+    <form id="contactForm" onsubmit="event.preventDefault(); alert('Thanks — message not actually sent in demo.')">
+      <label>
+        <input type="text" placeholder="Your Name" required>
+      </label>
+      <label>
+        <input type="email" placeholder="Your Email" required>
+      </label>
+      <label>
+        <textarea placeholder="Message" rows="5"></textarea>
+      </label>
+      <div style="text-align:right;">
+        <button type="submit" class="btn">Send</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Bapatla Attendance</p>
+    </div>
+  </footer>
+</body>
+</html>
